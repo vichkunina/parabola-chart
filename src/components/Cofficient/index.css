@@ -13,3 +13,7 @@
 .CoefficientInput:focus {
     outline: none;
 }
+
+.FormulaEditor-CoefficientInput:focus {
+    outline: none;
+}
