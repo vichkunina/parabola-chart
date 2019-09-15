@@ -77,7 +77,7 @@ export default class Parabola extends Component {
         const lines = [];
         const currentFormula = this.getCurrentLine();
         const { a, b, c } = terms;
-        
+
         for (let i = -10, index = 0; i <= 10; i++) {
             let chartLine = chartLines[index];
 
@@ -129,8 +129,10 @@ export default class Parabola extends Component {
                 tokens.push(suffix);
             }
         });
+
+        const result = tokens.join('').trim()
        
-        return tokens.join('').trim();
+        return result === 'y ='? 'y = 0' : result;
     }
 
     render() {

@@ -4,11 +4,12 @@
     justify-content: space-evenly;
     top: 50px;
     align-items: flex-start;
+    font-family: Arial, sans-serif;
 }
 
 .Chart-Formula {
     padding: 10px;
     border: 2px solid #D9CC6A;
     border-radius: 5px;
-    margin: 0 30px;
+    margin: 0 15px;
 }

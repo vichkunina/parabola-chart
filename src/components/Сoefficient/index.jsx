@@ -14,7 +14,7 @@ export class Сoefficient extends React.Component {
         } = this.props;
 
         return (<form className={cnFormulaEditor()} onSubmit={onSubmit}>
-            <h2 className={cnFormulaEditor('Header')}>Введите значение коэффициентов</h2>
+            <h3 className={cnFormulaEditor('Header')}>Введите значение коэффициентов</h3>
             <div>
                 y = <input
                     value={this.props.terms.a}
