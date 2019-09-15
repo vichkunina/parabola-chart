@@ -11,17 +11,20 @@ export const Cofficient = ({ onSubmit, changeCofficient, cleanFields }) =>
         <div>
             y = <input
                 id={1}
+                type="number"
                 className={cnFormulaEditor('CoefficientInput')}
                 defaultValue={1}
                 onBlur={changeCofficient}
             />x<sup>2</sup> + <input
                 id={2}
+                type="number"
                 className={cnFormulaEditor('CoefficientInput')}
                 defaultValue={0}
                 onBlur={changeCofficient}
             />x+ 
             <input
                 id={3}
+                type="number"
                 className={cnFormulaEditor('CoefficientInput')}
                 defaultValue={0}
                 onBlur={changeCofficient}

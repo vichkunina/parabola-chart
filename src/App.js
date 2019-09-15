@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Parabola from './components/Parabola';
-import styles from './index.css';
 
 class App extends Component {
     render() {

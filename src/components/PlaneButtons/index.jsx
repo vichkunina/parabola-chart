@@ -6,12 +6,11 @@ const cnFormulaButtons = cn('FormulaEditor')
 
 export const PlaneButtons = ({ cleanFields }) =>
     <div className={cnFormulaButtons('Buttons')}>
-        <input
+        <button
             className={cnFormulaButtons('Button')}
             type="submit"
-            value="Рисовать"
-        />
-        <button className={cnFormulaButtons('Button')} onClick={() => cleanFields()}>
+        >Рисовать</button>
+        <button type="reset" className={cnFormulaButtons('Button')} onClick={() => cleanFields()}>
             Очистить
         </button>
     </div>

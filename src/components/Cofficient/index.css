@@ -1,6 +1,6 @@
 .FormulaEditor-CoefficientInput {
     height: 40px;
-    width: 40px;
+    width: 60px;
     box-sizing: border-box;
     border: 2px solid #68b9d4;
     border-radius: 4px;
@@ -17,3 +17,9 @@
 .FormulaEditor-CoefficientInput:focus {
     outline: none;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+

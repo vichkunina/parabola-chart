@@ -7,8 +7,7 @@ import {
     CartesianGrid,
     Line,
     Legend,
-    ReferenceLine,
-    Tooltip
+    ReferenceLine
 } from 'recharts';
 
 export const Plane = ({ chartLines, parabolaLines }) => 
@@ -16,7 +15,6 @@ export const Plane = ({ chartLines, parabolaLines }) =>
         <LineChart data={chartLines}>
             <XAxis dataKey='name'/>
             <YAxis />
-            <Tooltip />
             <ReferenceLine x={0} stroke="#000" />
             <ReferenceLine y={0} stroke="#000" />
             <CartesianGrid stroke="#b9e0ed" strokeDasharray="5 5"/>
@@ -30,6 +28,7 @@ export const Plane = ({ chartLines, parabolaLines }) =>
             {
                 parabolaLines.map(({color, dataKey}, key) => 
                     <Line
+                        isAnimationActive={false}
                         key={key}
                         name={dataKey}
                         stroke={color}

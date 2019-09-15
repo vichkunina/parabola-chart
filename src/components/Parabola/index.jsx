@@ -109,21 +109,25 @@ export default class Parabola extends Component {
 
     getCurrentLine = (...coffecients) => {
         let resultFormula = 'y = ';
-        const [leadingCofficient, coffecient, freeTerm] = coffecients;
+        let [leadingCofficient, coffecient, freeTerm] = coffecients;
+        leadingCofficient = Number(leadingCofficient);
 
-        if(!Number(leadingCofficient) && !Number(coffecient) && !Number(freeTerm)) {
+        coffecient = Number(coffecient);
+        freeTerm = Number(freeTerm);
+
+        if(!leadingCofficient && !coffecient && !freeTerm) {
             return resultFormula += '0'
         }
 
-        if(Number(leadingCofficient)) {
-            resultFormula += Number(leadingCofficient) !== 1 ? `${leadingCofficient}x² ` : 'x² ';
+        if(leadingCofficient) {
+            resultFormula += leadingCofficient !== 1 ? `${leadingCofficient}x² ` : 'x² ';
         }
 
-        if(Number(coffecient)) {
+        if(coffecient) {
             resultFormula += `+ ${coffecient}x`;
         }
 
-        if(Number(freeTerm)) {
+        if(freeTerm) {
             resultFormula += ` + ${freeTerm}`;
         }
 
