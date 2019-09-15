@@ -4,9 +4,7 @@ import Parabola from './components/Parabola';
 class App extends Component {
     render() {
         return (
-            <div className="root">
-                <Parabola />
-            </div>
+            <Parabola />
         );
     }
 }

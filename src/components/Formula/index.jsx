@@ -9,11 +9,11 @@ export const Formula = ({ currentLine }) => {
         <div className={cnFormula()}>
             <div>
                 <span className={cnFormula('Header')}>Вид функции</span>
-                <div className={cnFormula('Expression')}><i>y = kx<sup>2</sup></i></div>
+                <div className={cnFormula('Expression')}>y = kx<sup>2</sup></div>
             </div>
             <div>
                 <span className={cnFormula('Header')}>Формула с коэффициентами</span>
-                <div className={cnFormula('Expression')}><i>{currentLine}</i></div>
+                <div className={cnFormula('Expression')}>{currentLine}</div>
             </div>
         </div>
     )
