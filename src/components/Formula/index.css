@@ -1,0 +1,17 @@
+.Formula {
+    background: #FDF8E7;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 0 10px 30px;
+    text-align: left;
+    line-height: 28px;
+}
+
+.Formula-Header {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Formula-Expression {
+    font-size: 16px;
+}

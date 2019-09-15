@@ -1,0 +1,15 @@
+.FormulaEditor-CoefficientInput {
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    border: 2px solid #68b9d4;
+    border-radius: 4px;
+    font-size: 26px;
+    text-align: center;
+    cursor: text;
+    margin: 0 5px;
+}
+
+.CoefficientInput:focus {
+    outline: none;
+}

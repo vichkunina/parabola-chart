@@ -1,0 +1,19 @@
+{
+  "name": "charts",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@bem-react/classname": "^1.5.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "0.9.5",
+    "recharts": "^1.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

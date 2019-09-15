@@ -1,0 +1,14 @@
+.Chart {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top: 50px;
+    align-items: flex-start;
+}
+
+.Chart-Formula {
+    padding: 10px;
+    border: 2px solid #D9CC6A;
+    border-radius: 10px;
+    margin: 0 30px;
+}
